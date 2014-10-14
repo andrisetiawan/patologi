@@ -1,8 +1,13 @@
 var index = require('./app/controllers/index')
+var notificationsController = require('./app/controllers/notificationsController')
 
 
 module.exports = function(app) {
   app.use('/', index)
+
+  // Notification
+  app.get(    '/notifications', notificationsController.getNotifications)
+  app.post(   '/notifications', notificationsController.createNotification)
 
   // Catch undefined routes
   catchError(app)
