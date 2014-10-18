@@ -1,2 +1,2 @@
-/bin/*
+/bin/www
 /config/database.js
