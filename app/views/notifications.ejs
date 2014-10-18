@@ -1,0 +1,9 @@
+<h3>Recieved Notifications</h3>
+<ul>
+<% notifications.forEach(function(notification){ %>
+  <li>
+    <%= notification.created_at %> (<%= moment(notification.created_at).fromNow() %>)
+    <pre><%= notification.message %></pre>
+  </li>
+<% }) %>
+</ul>

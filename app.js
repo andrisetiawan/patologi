@@ -15,7 +15,7 @@ mongoose.connect(database.url)
 
 // Setup View Engine 
 app.set('views', path.join(__dirname, 'app/views'))
-app.set('view engine', 'hjs')
+app.set('view engine', 'ejs')
 
 // Setup Favicon
 //app.use(favicon(__dirname + '/public/favicon.ico'))

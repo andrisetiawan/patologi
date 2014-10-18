@@ -10,7 +10,7 @@ module.exports.getNotifications = function(request, response) {
       errorHandler(err, request, response)
     } else {
       // response.json(notifications)
-      response.render('notifications', { notifications: notifications })
+      response.render('notifications', { notifications: notifications, moment: moment })
     }
   })
 }
